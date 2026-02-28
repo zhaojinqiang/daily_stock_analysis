@@ -64,9 +64,9 @@ jobs:
           #OPENAI_BASE_URL: https://api.deepseek.com/v1
           #OPENAI_MODEL: deepseek-chat
           
-          OPENAI_API_KEY: sk-EWEpYQBRi8ycG46KUpaot579giJ8ldviuPbRJvOqJqKyLBWT
+          OPENAI_API_KEY: sk-I5lLeSzuYHaAvJZ1UTBJwwMzWamVtNviJlgqjfhDgXNWSUMC
           OPENAI_BASE_URL: https://api.weelinking.com/v1
-          OPENAI_MODEL: gemini3 pro
+          OPENAI_MODEL: gemini
 
 
           # ==========================================
