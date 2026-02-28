@@ -60,10 +60,15 @@ jobs:
           GEMINI_REQUEST_DELAY: '3.0'
           
           # OpenAI 兼容 API（备选）
-          OPENAI_API_KEY: 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
-          OPENAI_BASE_URL: https://api.deepseek.com/v1
-          OPENAI_MODEL: deepseek-chat
+          #OPENAI_API_KEY: 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
+          #OPENAI_BASE_URL: https://api.deepseek.com/v1
+          #OPENAI_MODEL: deepseek-chat
           
+          OPENAI_API_KEY: sk-EWEpYQBRi8ycG46KUpaot579giJ8ldviuPbRJvOqJqKyLBWT
+          OPENAI_BASE_URL: https://api.weelinking.com/v1
+          OPENAI_MODEL: gemini3 pro
+
+
           # ==========================================
           # 数据源
           # ==========================================
