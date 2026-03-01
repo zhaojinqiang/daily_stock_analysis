@@ -78,7 +78,7 @@ jobs:
           # 搜索服务
           # ==========================================
           BOCHA_API_KEYS: ${{ secrets.BOCHA_API_KEYS }}
-          TAVILY_API_KEYS: ${{ secrets.TAVILY_API_KEYS }}
+          TAVILY_API_KEYS: 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
           SERPAPI_API_KEYS: ${{ secrets.SERPAPI_API_KEYS }}
           
           # ==========================================
@@ -130,7 +130,7 @@ jobs:
           # ==========================================
           # 自选股配置
           # ==========================================
-          STOCK_LIST: 600519，600884
+          STOCK_LIST: sh.600884,sh.600916
           
           # ==========================================
           # 运行配置 ⬅️ 新增！
