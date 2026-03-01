@@ -54,10 +54,11 @@ jobs:
           # AI 配置
           # ==========================================
           # Gemini AI（主选）
-          GEMINI_API_KEY: sk-lQhraIPfSGgJyp9oANpqESPOLdSeR7BdPDCMvvMKpLmtMLpu
+          GEMINI_API_KEY: sk-LLd8oIyL71Keahyn2P8yvmyAryh8IwOrJBjNWIxblLSZyBEH
           GEMINI_MODEL: gemini-3-flash-preview
           GEMINI_MODEL_FALLBACK: gemini-2.5-flash
           GEMINI_REQUEST_DELAY: '3.0'
+          OPENAI_BASE_URL: https://api.weelinking.com
           
           # OpenAI 兼容 API（备选）
           #OPENAI_API_KEY: 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
