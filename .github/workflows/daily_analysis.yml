@@ -62,7 +62,7 @@ jobs:
           
           # OpenAI 兼容 API（备选）
           OPENAI_API_KEY: sk-b8e9c86bf5a0bcf4808a55052dd493a84f6384ffaed4df1f
-          OPENAI_BASE_URL: https://api.deepseek.com/v1
+          OPENAI_BASE_URL:  https://demo.voapi.top
           OPENAI_MODEL: deepseek-chat
           
           #OPENAI_API_KEY: sk-I5lLeSzuYHaAvJZ1UTBJwwMzWamVtNviJlgqjfhDgXNWSUMC
