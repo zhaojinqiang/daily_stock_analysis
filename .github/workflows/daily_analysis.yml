@@ -122,7 +122,7 @@ jobs:
           # 方式九：飞书云文档
           FEISHU_APP_ID: cli_a93a91e60db85bd3
           FEISHU_APP_SECRET: 0R4KBkPccrON6lwmlfR6Pc8DDfdrNHln
-          FEISHU_FOLDER_TOKEN: Wr1YfOBqVltGpGdQrMIcmJ0Fnrc
+          FEISHU_FOLDER_TOKEN: root
 
           # 方式十：AstrBot
           ASTRBOT_URL: ${{ secrets.ASTRBOT_URL }}
@@ -151,7 +151,7 @@ jobs:
           # 实时行情数据源优先级（腾讯有量比且稳定，推荐首选）
           # 可选值: tencent, akshare_sina, efinance, akshare_em, tushare
           # 如果有 Tushare Pro 高积分账号，可将 tushare 放在首位
-          REALTIME_SOURCE_PRIORITY: tencent,tushare,akshare_sina,efinance,akshare_em
+          REALTIME_SOURCE_PRIORITY: tencent,akshare_sina,efinance,akshare_em
           
         run: |
           # 判断运行模式
