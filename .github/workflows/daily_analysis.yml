@@ -78,46 +78,46 @@ jobs:
           # ==========================================
           # 搜索服务
           # ==========================================
-          BOCHA_API_KEYS: ${{ secrets.BOCHA_API_KEYS }}
+          #BOCHA_API_KEYS: ${{ secrets.BOCHA_API_KEYS }}
           TAVILY_API_KEYS: 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
-          SERPAPI_API_KEYS: ${{ secrets.SERPAPI_API_KEYS }}
+          #SERPAPI_API_KEYS: ${{ secrets.SERPAPI_API_KEYS }}
           
           # ==========================================
           # 通知渠道（可同时配置多个，全部推送）
           # ==========================================
           
           # 方式一：企业微信 Webhook
-          WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
-          WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
+          #WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
+          #WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
           FEISHU_WEBHOOK_URL: https://open.feishu.cn/open-apis/bot/v2/hook/0ce9bc8d-daf0-4692-9058-a9ea8c08bee3
           
           # 方式三：Telegram
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.TELEGRAM_MESSAGE_THREAD_ID }}
+          #TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          #TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          #TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.TELEGRAM_MESSAGE_THREAD_ID }}
           
           # 方式四：邮件
-          EMAIL_SENDER: ${{ vars.EMAIL_SENDER || secrets.EMAIL_SENDER }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_RECEIVERS: ${{ vars.EMAIL_RECEIVERS || secrets.EMAIL_RECEIVERS }}
+          #EMAIL_SENDER: ${{ vars.EMAIL_SENDER || secrets.EMAIL_SENDER }}
+          #EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          #EMAIL_RECEIVERS: ${{ vars.EMAIL_RECEIVERS || secrets.EMAIL_RECEIVERS }}
           
           # 方式五：Pushover
-          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
-          PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
+          #PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          #PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
           
           # 方式六：PushPlus ⬅️ 新增！
-          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          #PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           
           # 方式七：自定义 Webhook（钉钉、Bark、自建服务等）
-          CUSTOM_WEBHOOK_URLS: ${{ secrets.CUSTOM_WEBHOOK_URLS }}
-          CUSTOM_WEBHOOK_BEARER_TOKEN: ${{ secrets.CUSTOM_WEBHOOK_BEARER_TOKEN }}
+          #CUSTOM_WEBHOOK_URLS: ${{ secrets.CUSTOM_WEBHOOK_URLS }}
+          #CUSTOM_WEBHOOK_BEARER_TOKEN: ${{ secrets.CUSTOM_WEBHOOK_BEARER_TOKEN }}
           
           # 方式八：Discord
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-          DISCORD_MAIN_CHANNEL_ID: ${{ secrets.DISCORD_MAIN_CHANNEL_ID }}
+          #DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          #DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          #DISCORD_MAIN_CHANNEL_ID: ${{ secrets.DISCORD_MAIN_CHANNEL_ID }}
           
           # 方式九：飞书云文档
           FEISHU_APP_ID: cli_a93a91e60db85bd3
@@ -125,8 +125,8 @@ jobs:
           FEISHU_FOLDER_TOKEN: root
 
           # 方式十：AstrBot
-          ASTRBOT_URL: ${{ secrets.ASTRBOT_URL }}
-          ASTRBOT_TOKEN: ${{ secrets.ASTRBOT_TOKEN }}
+          #ASTRBOT_URL: ${{ secrets.ASTRBOT_URL }}
+          #ASTRBOT_TOKEN: ${{ secrets.ASTRBOT_TOKEN }}
 
           # ==========================================
           # 自选股配置
@@ -155,7 +155,7 @@ jobs:
           
         run: |
           # 判断运行模式
-          MODE="${{ github.event.inputs.mode || 'full' }}"
+          MODE="${{ github.event.inputs.mode || 'stocks-only' }}"
           
           echo "=========================================="
           echo "🚀 A股自选股智能分析系统"
